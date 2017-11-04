@@ -1,0 +1,55 @@
+* {
+    font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+}
+button {
+    height:3em;
+    min-width:6em;
+    border-radius:.5em;
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+}
+button.show {
+    background-color: #bfd6ff;
+}
+button.show:hover {
+    background-color: #e2edff;
+}
+button.showall {
+    background-color: #003dab;
+    color: #fff;
+}
+button.showall:hover {
+    background-color: #2162d8;
+}
+button.move {
+    background-color: #ffbff8;
+}
+button.move:hover {
+    background-color: #fdddf9;
+}
+select {
+    height: 3em;
+    min-width: 6em;
+}
+#cache {
+    overflow: hidden;
+    width: 0;
+    height: 0;
+}
+#photo {
+    max-width: 448px;
+    width: 100%;
+    height: auto;
+}
+table {
+    min-width: 20em;
+}
+div.photo {
+    position: relative;
+    float: left;
+}
+#pdf {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}

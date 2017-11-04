@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>生薬鑑定試験対策</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="common.css">
+<script src="kantei.js" charset="UTF-8"></script>
+</head>
+<body onLoad="init()">
+    <div id="content">
+        <div class="photo"><img id="photo" src="img/001.jpg" /></div>
+        <div class="control">
+            <table>
+                <tr>
+                    <td><button onclick="show(0)" class="show">生薬名</button></td>
+                    <td id="ans0"></td>
+                </tr>
+                <tr>
+                    <td><button onclick="show(1)" class="show">基原名</button></td>
+                    <td id="ans1"></td>
+                </tr>
+                <tr>
+                    <td><button onclick="show(2)" class="show">基原科名</button></td>
+                    <td id="ans2"></td>
+                </tr>
+                <tr>
+                    <td><button onclick="show(3)" class="show">薬用部位</button></td>
+                    <td id="ans3"></td>
+                </tr>
+                <tr>
+                    <td><button onclick="show(4)" class="show">主成分名</button></td>
+                    <td id="ans4"></td>
+                </tr>
+                <tr>
+                    <td><button onclick="show(5)" class="show">主用途</button></td>
+                    <td id="ans5"></td>
+                </tr>
+                <tr>
+                    <td><button onclick="showall()" class="showall">すべて表示</button></td>
+                    <td>
+                        <button onclick="next()" class="move">次へ</button>
+                        <select id="order">
+                            <option value="1">五十音順</option>
+                            <option value="0">ランダム</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <p id="pdf">
+        <a href="./shoyaku.pdf">印刷用（暗記カード）</a>
+    </p>
+    <iframe width="320" height="180" src="https://www.youtube.com/embed/wkHAQuyO-BY" frameborder="0" allowfullscreen></iframe>
+    <iframe width="320" height="180" src="https://www.youtube.com/embed/_x4oimQPgW8" frameborder="0" allowfullscreen></iframe>
+    <div id="cache"></div>
+<img style="visibility:hidden" src="http://analyzer53.fc2.com/ana/icon.php?uid=736700&ref=&href=&wid=0&hei=0&col=0" />
+<!--
+</body>
+</html>
+
+
